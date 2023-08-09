@@ -172,3 +172,7 @@ SIMPLE_JWT = {
     ),  # Set your desired access token lifetime here
     "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
 }
+
+
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles_build", "static")
